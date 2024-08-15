@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { Mail, MapPin, Phone } from "lucide-react";
+import cv from '../../../assets/cv.pdf'
 
 
 const Bio = ({
@@ -100,7 +101,7 @@ const Bio = ({
           </div>
           {/* Download CV Button */}
           <a
-            href="/assets/cv.docx" // Link to your CV file
+            href={cv} // Link to your CV file
             download
             className="mt-4 inline-block bg-teal-600 hover:bg-teal-500 text-white py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-teal-300"
           >

@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { LayoutListIcon } from "lucide-react";
 
-const PreviewSkill = ({ name, levelOfProficiency }) => {
+
+const PreviewSkill = ({ name, img, levelOfProficiency }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -9,7 +10,7 @@ const PreviewSkill = ({ name, levelOfProficiency }) => {
       transition={{ duration: 0.5, delay: 0.1 }}
       className="flex flex-col justify-center items-center bg-gradient-to-b from-teal-400 to-teal-700 text-white p-8 rounded-xl w-72 h-96 shadow-2xl transform transition-transform hover:scale-105"
     >
-      <LayoutListIcon size={75} className="text-white mb-4" />
+      <img src={img} size={75} className="mb-4" alt="" />
       <h2 className="font-semibold text-center text-2xl text-white">{name}</h2>
       <p className="mt-2 text-white text-lg">{levelOfProficiency}</p>
       <div className="mt-4 w-full bg-white bg-opacity-25 rounded-full">
