@@ -16,6 +16,9 @@ import figma from '../../assets/figma.png'
 import mingle from '../../assets/mingle.png'
 import portfolio from '../../assets/portfolio.png'
 import Footer from "../footer"
+import react from "../../assets/react.png"
+import fig from "../../assets/fig.png"
+import psd from "../../assets/psd.png"
 
 
 const Preview = () => {
@@ -43,7 +46,7 @@ const Preview = () => {
       <div className="flex-col justify-center items-center text-center space-y-8 mt-20">
         <h3 className="text-teal-500 text-6xl font-bold">About me</h3>
         <p className="text-black text-lg mx-auto max-w-4xl">As a driven and innovative professional, I'm excited to leverage my academic background, industry experience, and research skills to drive business growth and deliver value-added solutions. With a natural aptitude for problem-solving and a results-driven mindset, I'm confident in my ability to make a meaningful impact in any team or project.
-          With a passion for technology and creative design, I specialize in web development, graphic design, and UI design. I'm dedicated to crafting intuitive digital experiences and visually stunning graphics that captivate and engage.
+          With a passion for technology and creative design, I specialize in web development and graphic design. I'm dedicated to crafting intuitive digital experiences and visually stunning graphics that captivate and engage.
           Also, embracing a growth mindset, I'm committed to continuous learning and self-improvement, staying up-to-date with industry trends and advancements. I thrive in environments where no two challenges are the same, and I'm eager to take on new opportunities that foster growth and innovation.
           Let's connect and explore opportunities to bring innovative ideas to life, drive success, and shape the future of the digital landscape together!</p>
       </div>
@@ -53,9 +56,21 @@ const Preview = () => {
           <h2 className="text-6xl font-bold text-white">Skills</h2>
         </div>
         <div className="flex flex-row justify-center gap-8">
-          <PreviewSkill name="React.js" levelOfProficiency="Beginner" />
-          <PreviewSkill name="Figma" levelOfProficiency="Intermediate" />
-          <PreviewSkill name="Photoshop" levelOfProficiency="Advanced" />
+          <PreviewSkill
+           name="React.js"
+           img={react}
+           levelOfProficiency="Beginner" />
+          <PreviewSkill
+           name="Figma"
+           img={fig}
+           levelOfProficiency="Intermediate" />
+          
+          <PreviewSkill
+           name="PhotoShop"
+           img={psd}
+           levelOfProficiency="Intermediate" />
+          
+         
         </div>
       </div>
 
@@ -169,7 +184,7 @@ Utilized comprehensive skill set to design, develop, and deploy fully-functional
                   projectName="My Portfolio"
                   img={portfolio}
                   description="A website to showcase my skills and experience"
-                  projectLink='https://tale-net.netlify.app'
+                  projectLink='https://my-portfolio-quintin.netlify.app'
                 />
               </div>
               <div className="p-2">
